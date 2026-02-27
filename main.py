@@ -22,7 +22,7 @@ def generate_password(): #creates the password
         rd.choice(char_sets["lowercase"]),
         rd.choice(char_sets["numbers"]),
         rd.choice(char_sets["symbols"])
-    ]# randomly choses the char_sets and it will always have atleast and uppercase, lowercase, numbers, symbols
+    ]# randomly choses the char_sets and it will always have atleast an uppercase letter, lowercase letter, numbers, and symbols
     
     remaining_length = total_length - 4 #the -4 is because the password will always start with the password_chars
     while remaining_length > 0:
